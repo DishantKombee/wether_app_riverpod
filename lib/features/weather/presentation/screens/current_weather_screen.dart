@@ -246,13 +246,11 @@ class _WeatherInfoCard extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(icon, color: color),
-              SizedBox(width: 8.w),
-              Expanded(
-                child: Text(
-                  title,
-                  style: theme.textTheme.titleMedium?.copyWith(color: color),
-                ),
+              Expanded(child: Icon(icon, color: color)),
+              SizedBox(width: 5.w),
+              Text(
+                title,
+                style: theme.textTheme.titleMedium?.copyWith(color: color),
               ),
             ],
           ),
