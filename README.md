@@ -98,10 +98,10 @@ flutter test
 
 
 <p align="center">
-  <img src="assets/images/image-1.png  width="250"/>
-   <img src="assets/images/image-2.png  width="250"/>
-   <img src="assets/images/image-3.png  width="250"/>
-   <img src="assets/images/image-4.png  width="250"/>
+  <img src="screenshot/image-1.png  width="250"/>
+   <img src="screenshot/image-2.png  width="250"/>
+   <img src="screenshot/image-3.png  width="250"/>
+   <img src="screenshot/image-4.png  width="250"/>
 </p>
 
 ---
