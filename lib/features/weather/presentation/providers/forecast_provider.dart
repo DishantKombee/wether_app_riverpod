@@ -4,36 +4,36 @@ import '../../../../core/services/location_service.dart';
 import '../../domain/entities/weather.dart';
 import '../../../weather/data/repositories/weather_repository_impl.dart';
 
-part 'weather_provider.g.dart';
+part 'forecast_provider.g.dart';
 
 @riverpod
-class WeatherNotifier extends _$WeatherNotifier {
+class ForecastNotifier extends _$ForecastNotifier {
   @override
-  Future<Weather> build() async {
+  Future<List<Weather>> build() async {
     state = const AsyncValue.loading();
-    return _getCurrentLocationWeather();
+    return _getCurrentLocationForecast();
   }
 
-  Future<Weather> _getCurrentLocationWeather() async {
+  Future<List<Weather>> _getCurrentLocationForecast() async {
     try {
       final position =
           await ref.read(locationServiceProvider).getCurrentPosition();
-      final weather = await ref
+      final forecast = await ref
           .read(weatherRepositoryProvider)
-          .getCurrentWeatherByLocation(position.latitude, position.longitude);
-      return weather;
+          .getForecastByLocation(position.latitude, position.longitude);
+      return forecast;
     } catch (e) {
-      throw Exception('${AppConstants.failedToGetWeather}$e');
+      throw Exception('${AppConstants.failedToGetForecast}$e');
     }
   }
 
-  Future<Weather> getWeatherForCity(String cityName) async {
+  Future<List<Weather>> getForecastForCity(String cityName) async {
     state = const AsyncValue.loading();
     try {
-      final weather =
-          await ref.read(weatherRepositoryProvider).getCurrentWeather(cityName);
-      state = AsyncValue.data(weather);
-      return weather;
+      final forecast =
+          await ref.read(weatherRepositoryProvider).getForecast(cityName);
+      state = AsyncValue.data(forecast);
+      return forecast;
     } catch (e) {
       state = AsyncValue.error(e, StackTrace.current);
       rethrow;

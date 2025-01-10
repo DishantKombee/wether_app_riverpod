@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import '../../../../core/constants/app_constants.dart';
 import '../../domain/entities/weather.dart';
-import '../providers/weather_provider.dart';
+import '../providers/forecast_provider.dart';
 import '../widgets/weather_error_widget.dart';
 import '../widgets/weather_loading_widget.dart';
 
