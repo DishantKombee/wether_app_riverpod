@@ -1,6 +1,6 @@
 # ❄️  📱 Weather App with Clean Architecture & Riverpod
 
-A modern, professional weather application built with Flutter 3.0+, embracing clean architecture and Riverpod state management for real-time weather updates and forecasts.
+A modern, professional weather application built with Flutter 3.24.5, embracing clean architecture and Riverpod state management for real-time weather updates and forecasts.
 ---
 ## 🎯 Key Features
 🌡️ Real-time Weather Data: Current conditions using Weatherstack API
