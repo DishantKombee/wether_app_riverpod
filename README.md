@@ -92,8 +92,22 @@ Run all tests:
 flutter test
 ```
 
-📸 Screenshots
-[DishantKombee/wether_app_riverpod/assets/images/image-1.png]
+## 📸 **Screenshots**
+
+
+
+
+<p align="center">
+  <img src="assets/images/image-1.png  width="250"/>
+   <img src="assets/images/image-2.png  width="250"/>
+   <img src="assets/images/image-3.png  width="250"/>
+   <img src="assets/images/image-4.png  width="250"/>
+</p>
+
+---
+## Apk File 
+[APK](https://github.com/DishantKombee/todo_app_provider/blob/main/android/app-release.apk)
+
 
 ## 🔑 Key Implementation Details
 
