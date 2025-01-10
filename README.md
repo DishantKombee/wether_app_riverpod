@@ -93,7 +93,7 @@ flutter test
 ```
 
 📸 Screenshots
-[Add your app screenshots here]
+[DishantKombee/wether_app_riverpod/assets/images/image-1.png]
 
 ## 🔑 Key Implementation Details
 
