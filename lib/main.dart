@@ -23,6 +23,7 @@ class WeatherApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (_, child) {
         return MaterialApp.router(
+          debugShowCheckedModeBanner: false,
           title: AppConstants.appName,
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
