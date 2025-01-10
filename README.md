@@ -1,8 +1,9 @@
-# ❄️  📱 Weather App with Clean Architecture & Riverpod
+# ❄️ 📱 Weather App with Clean Architecture & Riverpod
 
-A modern, professional weather application built with Flutter 3.24.5, embracing clean architecture and Riverpod state management for real-time weather updates and forecasts.
----
+## A modern, professional weather application built with Flutter 3.24.5, embracing clean architecture and Riverpod state management for real-time weather updates and forecasts.
+
 ## 🎯 Key Features
+
 🌡️ Real-time Weather Data: Current conditions using Weatherstack API
 📍 Location-Based Updates: Automatic weather for current location
 🔍 City Search: Find weather worldwide with city search
@@ -11,6 +12,7 @@ A modern, professional weather application built with Flutter 3.24.5, embracing 
 ⚡ Performance Optimized: Fast loading with shimmer effects and smooth animations
 
 ## 📂 Directory Structure
+
 ```plaintext
 lib/
 ├── core/ # Core functionality
@@ -33,6 +35,7 @@ lib/
 ├── screens/
 └── widgets/
 ```
+
 ## 🛠️ **Tech Stack**
 
 - Framework: Flutter 3.0+
@@ -94,20 +97,18 @@ flutter test
 
 ## 📸 **Screenshots**
 
-
-
-
 <p align="center">
-  <img src="screenshot/image-1.png  width="250"/>
-   <img src="screenshot/image-2.png  width="250"/>
-   <img src="screenshot/image-3.png  width="250"/>
-   <img src="screenshot/image-4.png  width="250"/>
+  <img src="screenshot/image-1.png" width="250"/>
+  <img src="screenshot/image-2.png" width="250"/>
+  <img src="screenshot/image-3.png" width="250"/>
+  <img src="screenshot/image-4.png" width="250"/>
 </p>
 
 ---
-## Apk File 
-[APK](https://github.com/DishantKombee/todo_app_provider/blob/main/android/app-release.apk)
 
+## Apk File
+
+[APK](https://github.com/DishantKombee/todo_app_provider/blob/main/android/app-release.apk)
 
 ## 🔑 Key Implementation Details
 
@@ -142,6 +143,7 @@ flutter test
 5. Open a Pull Request
 
 ## 📜 License
+
 This project is licensed under the MIT License.
 
 ## 👨‍💻 **Author**
@@ -149,6 +151,5 @@ This project is licensed under the MIT License.
 **Dishant Mehta**
 
 - 🌐 [Portfolio](https://github.com/DishantKombee)
-
 
 Built with ❤️ using Flutter and Riverpod
