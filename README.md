@@ -1,126 +1,125 @@
-# Weather App with Riverpod
+# ❄️  📱 Weather App with Clean Architecture & Riverpod
 
-A professional weather application built with Flutter, showcasing clean architecture, modern state management with Riverpod, and beautiful UI design.
+A modern, professional weather application built with Flutter 3.0+, embracing clean architecture and Riverpod state management for real-time weather updates and forecasts.
+---
+## 🎯 Key Features
+🌡️ Real-time Weather Data: Current conditions using Weatherstack API
+📍 Location-Based Updates: Automatic weather for current location
+🔍 City Search: Find weather worldwide with city search
+🎨 Beautiful UI: Modern Material Design 3 with responsive layout
+🏛️ Clean Architecture: Modular, testable, and maintainable codebase
+⚡ Performance Optimized: Fast loading with shimmer effects and smooth animations
 
-## Features
-
-- 🌤️ Real-time weather data using OpenWeatherMap API
-- 📍 Location-based weather updates
-- 🔍 Search weather by city name
-- 📅 5-day weather forecast
-- 🎨 Beautiful and responsive UI with smooth animations
-- 🌓 Automatic dark/light theme support
-- 🔄 Pull-to-refresh functionality
-- ⚡ Efficient state management with Riverpod
-- 🏗️ Clean Architecture implementation
-- 🧪 Unit and widget tests
-
-## Architecture
-
-The project follows Clean Architecture principles with the following layers:
-
-```
+## 📂 Directory Structure
+```plaintext
 lib/
-  ├── core/                 # Core functionality, shared across features
-  │   ├── api/             # API client and network handling
-  │   ├── constants/       # App-wide constants
-  │   ├── theme/          # Theme configuration
-  │   ├── utils/          # Utility functions
-  │   └── widgets/        # Shared widgets
-  │
-  └── features/           # Feature modules
-      └── weather/        # Weather feature
-          ├── data/       # Data layer (repositories, models)
-          ├── domain/     # Domain layer (entities, repositories interfaces)
-          └── presentation/ # Presentation layer (screens, providers, widgets)
+├── core/ # Core functionality
+│ ├── api/ # API client & network
+│ ├── constants/ # App-wide constants
+│ ├── services/ # Core services
+│ └── widgets/ # Shared widgets
+└── features/
+└── weather/ # Weather feature
+├── data/ # Data layer
+│ ├── datasources/
+│ ├── models/
+│ └── repositories/
+├── domain/ # Business logic
+│ ├── entities/
+│ ├── repositories/
+│ └── usecases/
+└── presentation/
+├── providers/
+├── screens/
+└── widgets/
 ```
+## 🛠️ **Tech Stack**
 
-## State Management
+- Framework: Flutter 3.0+
+- State Management: Riverpod 2.4+
+- Navigation: Go Router 13.0
+- Network: Dio with Pretty Logger
+- Location: Geolocator & Geocoding
+- UI Components:
+  - Flutter ScreenUtil
+  - Shimmer
+  - Google Fonts
+- Code Generation:
+  - Freezed
+  - Riverpod Generator
+  - JSON Serializable
 
-The app uses Riverpod for state management, demonstrating:
+## ⚙️ **Getting Started**
 
-- Dependency injection
-- Async state handling
-- Error handling
-- State persistence
-- Code generation with riverpod_generator
-
-## Getting Started
-
-1. Clone the repository
+1.  **Clone the Repository**
 
 ```bash
 git clone https://github.com/yourusername/weather_app_riverpod.git
+cd weather_app_riverpod
 ```
 
-2. Get dependencies
+2. **Install Dependencies**
 
 ```bash
 flutter pub get
 ```
 
-3. Run code generation
+3. **Run Code Generation**
 
 ```bash
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
 
-4. Add your OpenWeatherMap API key
+4. **Add Weatherstack API Key**
 
-- Get an API key from [OpenWeatherMap](https://openweathermap.org/api)
-- Replace `YOUR_API_KEY` in `lib/core/constants/app_constants.dart`
+- Get an API key from [Weatherstack](https://weatherstack.com/)
+- Update `lib/core/constants/app_constants.dart`
 
-5. Run the app
+```dart
+static const String apiKey = 'YOUR_API_KEY';
+```
+
+5. Run the App
 
 ```bash
 flutter run
 ```
 
-## Testing
-
-The project includes comprehensive tests:
+🧪 **Testing**
+Run all tests:
 
 ```bash
-# Run all tests
 flutter test
-
-# Run tests with coverage
-flutter test --coverage
 ```
 
-## Dependencies
+📸 Screenshots
+[Add your app screenshots here]
 
-- **State Management**
+## 🔑 Key Implementation Details
 
-  - flutter_riverpod
-  - riverpod_annotation
+- 🏗️ Clean Architecture
 
-- **Navigation**
+  - Clear separation of concerns
+  - Domain-driven design
+  - Repository pattern
+  - Dependency injection
 
-  - go_router
+- 🔄 State Management with Riverpod
 
-- **Network**
+  - Async state handling
+  - Dependency injection
+  - Code generation
+  - Error handling
+  - State persistence
 
-  - dio
-  - pretty_dio_logger
+- 📱 UI/UX Features
+  - Responsive design
+  - Loading states with shimmer
+  - Error handling with retry
+  - Pull-to-refresh
+  - Location permissions handling
 
-- **UI Components**
-
-  - flutter_screenutil
-  - cached_network_image
-  - shimmer
-
-- **Location**
-
-  - geolocator
-  - geocoding
-
-- **Utils**
-  - freezed
-  - json_serializable
-  - intl
-
-## Contributing
+🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -128,12 +127,14 @@ flutter test --coverage
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## 📜 License
+This project is licensed under the MIT License.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 👨‍💻 **Author**
 
-## Acknowledgments
+**Dishant Mehta**
 
-- [OpenWeatherMap](https://openweathermap.org/) for providing the weather data API
-- [Flutter](https://flutter.dev/) and [Dart](https://dart.dev/) teams for the amazing framework
-- [Riverpod](https://riverpod.dev/) team for the excellent state management solution
+- 🌐 [Portfolio](https://github.com/DishantKombee)
+
+
+Built with ❤️ using Flutter and Riverpod
